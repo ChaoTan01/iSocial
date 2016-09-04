@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>159240848971-85065tqqos04l3ta0vbtmat8urivtnjf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.159240848971-85065tqqos04l3ta0vbtmat8urivtnjf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCb606O5w8xgLJnv7s1W0069Fe1HAB8-xE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>159240848971</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.chaotan.iSocial</string>
+	<key>PROJECT_ID</key>
+	<string>isocial-da911</string>
+	<key>STORAGE_BUCKET</key>
+	<string>isocial-da911.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:159240848971:ios:773827734900f702</string>
+	<key>DATABASE_URL</key>
+	<string>https://isocial-da911.firebaseio.com</string>
+</dict>
+</plist>
