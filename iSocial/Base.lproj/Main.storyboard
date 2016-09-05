@@ -57,6 +57,9 @@
                                                 <state key="normal" image="f">
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="facebookBtnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xN1-Ze-doH"/>
+                                                </connections>
                                             </button>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vGq-QP-iPs">
                                                 <subviews>
@@ -65,12 +68,18 @@
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email Address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jrw-5z-fIw" customClass="MainField" customModule="iSocial" customModuleProvider="target">
                                                                 <color key="textColor" white="0.13" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                                                <connections>
+                                                                    <action selector="emailField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="47Y-Aw-I8r"/>
+                                                                </connections>
                                                             </textField>
                                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bZF-BM-AV4" customClass="MainField" customModule="iSocial" customModuleProvider="target">
                                                                 <color key="textColor" white="0.13" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                                                <textInputTraits key="textInputTraits"/>
+                                                                <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                                <connections>
+                                                                    <action selector="pwdField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Uzn-jh-UTr"/>
+                                                                </connections>
                                                             </textField>
                                                         </subviews>
                                                         <constraints>
@@ -87,6 +96,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="trailing" secondItem="05e-Mt-3AS" secondAttribute="trailing" id="1Mh-B7-7mQ"/>
                                                     <constraint firstItem="05e-Mt-3AS" firstAttribute="top" secondItem="vGq-QP-iPs" secondAttribute="top" id="Dwi-i4-hue"/>
+                                                    <constraint firstAttribute="width" constant="300" id="Ita-Z8-Gge"/>
                                                     <constraint firstItem="05e-Mt-3AS" firstAttribute="leading" secondItem="vGq-QP-iPs" secondAttribute="leading" id="MsE-wT-lrD"/>
                                                     <constraint firstAttribute="width" constant="300" id="mfL-7y-OCk"/>
                                                 </constraints>
@@ -104,6 +114,9 @@
                                                         <state key="normal" title="Sign In">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="signInBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SEG-11-tEq"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -135,12 +148,8 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
-                                            <constraint firstAttribute="trailing" secondItem="fqD-OR-hNx" secondAttribute="trailing" constant="20" id="4aX-8Y-wKj"/>
-                                            <constraint firstItem="x5g-YY-VVb" firstAttribute="top" secondItem="gqE-aR-bS6" secondAttribute="top" constant="20" id="BNO-iq-hnp"/>
-                                            <constraint firstItem="fqD-OR-hNx" firstAttribute="leading" secondItem="gqE-aR-bS6" secondAttribute="leading" constant="20" id="CbN-NC-tiJ"/>
-                                            <constraint firstAttribute="trailing" secondItem="vGq-QP-iPs" secondAttribute="trailing" constant="20" id="Igd-g5-XRp"/>
+                                            <constraint firstItem="x5g-YY-VVb" firstAttribute="top" secondItem="gqE-aR-bS6" secondAttribute="top" constant="20" id="CrL-qo-cjP"/>
                                             <constraint firstItem="cX3-P5-0Cd" firstAttribute="top" secondItem="x5g-YY-VVb" secondAttribute="bottom" constant="20" id="MM2-E1-zfv"/>
-                                            <constraint firstItem="vGq-QP-iPs" firstAttribute="leading" secondItem="gqE-aR-bS6" secondAttribute="leading" constant="20" id="PiT-vy-X4O"/>
                                             <constraint firstAttribute="trailing" secondItem="x5g-YY-VVb" secondAttribute="trailing" constant="-25" id="YA7-4M-Tfl"/>
                                             <constraint firstItem="fqD-OR-hNx" firstAttribute="centerX" secondItem="gqE-aR-bS6" secondAttribute="centerX" id="a12-AK-Ewt"/>
                                             <constraint firstItem="x5g-YY-VVb" firstAttribute="leading" secondItem="gqE-aR-bS6" secondAttribute="leading" constant="-25" id="ba8-Hb-c9p"/>
@@ -151,22 +160,6 @@
                                             <constraint firstItem="fqD-OR-hNx" firstAttribute="top" secondItem="vGq-QP-iPs" secondAttribute="bottom" constant="10" id="r0X-QN-7M7"/>
                                             <constraint firstItem="hBQ-H9-3aF" firstAttribute="top" secondItem="cX3-P5-0Cd" secondAttribute="bottom" constant="30" id="rQE-LZ-6KP"/>
                                         </constraints>
-                                        <variation key="default">
-                                            <mask key="constraints">
-                                                <exclude reference="Igd-g5-XRp"/>
-                                                <exclude reference="PiT-vy-X4O"/>
-                                                <exclude reference="4aX-8Y-wKj"/>
-                                                <exclude reference="CbN-NC-tiJ"/>
-                                            </mask>
-                                        </variation>
-                                        <variation key="widthClass=compact">
-                                            <mask key="constraints">
-                                                <include reference="Igd-g5-XRp"/>
-                                                <include reference="PiT-vy-X4O"/>
-                                                <include reference="4aX-8Y-wKj"/>
-                                                <include reference="CbN-NC-tiJ"/>
-                                            </mask>
-                                        </variation>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -193,6 +186,10 @@
                             <constraint firstAttribute="trailing" secondItem="cvf-6v-8SY" secondAttribute="trailing" id="zli-Z3-40c"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="jrw-5z-fIw" id="hd6-sd-xdV"/>
+                        <outlet property="pwdField" destination="bZF-BM-AV4" id="ujm-Ki-kwa"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

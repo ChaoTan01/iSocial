@@ -36,6 +36,7 @@
 		979DB44F1D7CCC07007C27BC /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
 		979DB4511D7D11F7007C27BC /* MainField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainField.swift; sourceTree = "<group>"; };
 		979DB4531D7D1320007C27BC /* MainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
+		979DB4551D7D23D5007C27BC /* iSocial.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iSocial.entitlements; sourceTree = "<group>"; };
 		A54D14A7FF697051A18A71BB /* Pods-iSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSocial/Pods-iSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		D2C16A9C751FEE2DAB89E1A6 /* Pods_iSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -81,6 +82,7 @@
 		979DB4301D7C7D4E007C27BC /* iSocial */ = {
 			isa = PBXGroup;
 			children = (
+				979DB4551D7D23D5007C27BC /* iSocial.entitlements */,
 				979DB44A1D7CC17E007C27BC /* Utility */,
 				979DB4451D7C8464007C27BC /* Model */,
 				979DB4471D7C846E007C27BC /* Controller */,
@@ -175,6 +177,11 @@
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = X52CXEDL3C;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -391,6 +398,7 @@
 			baseConfigurationReference = A54D14A7FF697051A18A71BB /* Pods-iSocial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iSocial/iSocial.entitlements;
 				DEVELOPMENT_TEAM = X52CXEDL3C;
 				INFOPLIST_FILE = iSocial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -406,6 +414,7 @@
 			baseConfigurationReference = 43C888FEC2289EA55CB9E9F6 /* Pods-iSocial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = iSocial/iSocial.entitlements;
 				DEVELOPMENT_TEAM = X52CXEDL3C;
 				INFOPLIST_FILE = iSocial/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

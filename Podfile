@@ -10,5 +10,6 @@ target 'iSocial' do
   pod 'Firebase/Auth' #aka password, facebook login
   pod 'Firebase/Database'
   pod 'Firebase/Storage' #for image storage
+  pod 'FBSDKLoginKit'
 
 end
