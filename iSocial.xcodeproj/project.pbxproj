@@ -14,6 +14,11 @@
 		979DB4391D7C7D4E007C27BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 979DB4381D7C7D4E007C27BC /* Assets.xcassets */; };
 		979DB43C1D7C7D4E007C27BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 979DB43A1D7C7D4E007C27BC /* LaunchScreen.storyboard */; };
 		979DB4441D7C7F16007C27BC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 979DB4431D7C7F16007C27BC /* GoogleService-Info.plist */; };
+		979DB4491D7CC0BD007C27BC /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979DB4481D7CC0BD007C27BC /* MainView.swift */; };
+		979DB44C1D7CC1B4007C27BC /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979DB44B1D7CC1B4007C27BC /* Constants.swift */; };
+		979DB4501D7CCC07007C27BC /* RoundBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979DB44F1D7CCC07007C27BC /* RoundBtn.swift */; };
+		979DB4521D7D11F7007C27BC /* MainField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979DB4511D7D11F7007C27BC /* MainField.swift */; };
+		979DB4541D7D1320007C27BC /* MainButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979DB4531D7D1320007C27BC /* MainButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,11 @@
 		979DB43B1D7C7D4E007C27BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		979DB43D1D7C7D4E007C27BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		979DB4431D7C7F16007C27BC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		979DB4481D7CC0BD007C27BC /* MainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		979DB44B1D7CC1B4007C27BC /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		979DB44F1D7CCC07007C27BC /* RoundBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundBtn.swift; sourceTree = "<group>"; };
+		979DB4511D7D11F7007C27BC /* MainField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainField.swift; sourceTree = "<group>"; };
+		979DB4531D7D1320007C27BC /* MainButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainButton.swift; sourceTree = "<group>"; };
 		A54D14A7FF697051A18A71BB /* Pods-iSocial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSocial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iSocial/Pods-iSocial.debug.xcconfig"; sourceTree = "<group>"; };
 		D2C16A9C751FEE2DAB89E1A6 /* Pods_iSocial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSocial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -71,6 +81,7 @@
 		979DB4301D7C7D4E007C27BC /* iSocial */ = {
 			isa = PBXGroup;
 			children = (
+				979DB44A1D7CC17E007C27BC /* Utility */,
 				979DB4451D7C8464007C27BC /* Model */,
 				979DB4471D7C846E007C27BC /* Controller */,
 				979DB4461D7C846A007C27BC /* View */,
@@ -94,6 +105,10 @@
 		979DB4461D7C846A007C27BC /* View */ = {
 			isa = PBXGroup;
 			children = (
+				979DB4481D7CC0BD007C27BC /* MainView.swift */,
+				979DB44F1D7CCC07007C27BC /* RoundBtn.swift */,
+				979DB4511D7D11F7007C27BC /* MainField.swift */,
+				979DB4531D7D1320007C27BC /* MainButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -104,6 +119,14 @@
 				979DB4331D7C7D4E007C27BC /* SignInVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		979DB44A1D7CC17E007C27BC /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				979DB44B1D7CC1B4007C27BC /* Constants.swift */,
+			);
+			name = Utility;
 			sourceTree = "<group>";
 		};
 		A5FF1D2C245ADC3250732905 /* Pods */ = {
@@ -241,7 +264,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				979DB4341D7C7D4E007C27BC /* SignInVC.swift in Sources */,
+				979DB4501D7CCC07007C27BC /* RoundBtn.swift in Sources */,
+				979DB4541D7D1320007C27BC /* MainButton.swift in Sources */,
+				979DB4491D7CC0BD007C27BC /* MainView.swift in Sources */,
+				979DB4521D7D11F7007C27BC /* MainField.swift in Sources */,
 				979DB4321D7C7D4E007C27BC /* AppDelegate.swift in Sources */,
+				979DB44C1D7CC1B4007C27BC /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
